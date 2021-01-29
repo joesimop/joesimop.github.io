@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Projects</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styless.css">
+  </head>
+<body>
+<h1>Projects</h1>
+<p style="max-width: 80em;">Note: If the github icon is black, you must request to see my code, as it is protected under some sort of agreement!</p>
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <a>Sound Reactive LEDs using FFTs</a>
+        </button>
+        <a href="#"class="fa fa-github project-icon" style="color:#AAD8CF"></a>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        I love music, so this is one way I attempted to combine my love of music and coding. I used Fast Fourier Transforms to convert real-time
+        audio signals into their respective frequencies and animate the LED Strand accordingly. I initially coded my own FFT structure but then
+        resulted to using one from a library as it was much faster than mine.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <a>LZW Compression in C</a>
+        </button>
+        <a href="#" class="fa fa-github project-icon"></a>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        This is one of the projects I am most proud of completing. This is a compression algorithm that
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <a>Hash Table Implementation in C</a>
+        </button>
+        <a href="https://github.com/joesimop/C-Hash-Table-Implementation" class="fa fa-github project-icon"></a>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        This program was a part of my CPE 357 class, and I enjoyed it so much! It's effectivley an object oriented implementation of a Hash Table in C.
+        By using dynamic memory allocation and custom structs, the Hash Table uses separate chaining to create an quick way of storing data.
+        When creating the Hash Table, the user has the ability to put in their own functions in case they want to store custom Structs in the Hash Table.
+        This way they can destory and hash as they please. If they don't want to put in their own functions, I wrote some basic ones for them! The implementation
+        also has some level of protection, as the user can only access variables that I wrote functions for them to access.
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
