@@ -123,7 +123,7 @@ a:hover{
   font-weight: 300;
   margin-bottom: ;
   float: right;
-  color: black;
+  color: var(--text);
 }
 
 a.project-icon {
@@ -134,7 +134,7 @@ a.project-icon:after {
   top:1010%;
 }
 a.project-icon:hover{
-  color: #121314;
+  color: var(--accent);
 }
 
 @media screen and (max-width: 1200px){
