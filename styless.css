@@ -35,6 +35,15 @@ p {
   line-height: 1.6;
   max-width: 26em;
 }
+
+
+
+.page-center{
+  margin-top: 3.0em;
+}
+
+
+
 a {
   text-decoration: none;
   color: var(--text);
@@ -63,9 +72,7 @@ a:hover{
   text-decoration: none;
 }
 
-.page-center{
-  margin-top: 3.0em;
-}
+
 
 .image-cropper {
     height: auto;
@@ -74,6 +81,8 @@ a:hover{
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.31), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
+
+
 
 .btn-link:hover, .btn-link, .btn-link:focus{
    text-decoration:none;
@@ -100,6 +109,8 @@ a:hover{
   line-height: 1.6;
 }
 
+
+
 .footer {
   position: fixed;
   left: 0;
@@ -114,15 +125,17 @@ a:hover{
 .icon{
   font-size: 4.0em;
   font-weight: 500;
-
   margin-bottom: 0;
 }
+
+
 
 .project-icon{
   font-size: 3.0em;
   font-weight: 300;
   float: right;
   color: var(--text);
+  transition: all 700ms cubic-bezier(0, .8, .13, 1);
 }
 
 a.project-icon {
@@ -136,12 +149,7 @@ a.project-icon:hover{
   color: var(--accent);
 }
 
-@media screen and (max-width: 1200px){
 
-    .footer{
-        display: none;
-    }
-}
 
 #toggler{
   font-size: 1.5em;
@@ -150,6 +158,18 @@ a.project-icon:hover{
   padding: 0.5em;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 200ms cubic-bezier(0, .8, .13, 1);
-  z-index: 1000;
+  transition: all 700ms cubic-bezier(0, .8, .13, 1);
+}
+
+#toggler:hover{
+  background-color: : var(--bg);
+  color: var(--accent);
+}
+
+
+@media screen and (max-width: 1200px){
+
+    .footer{
+        display: none;
+    }
 }
