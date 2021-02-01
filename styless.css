@@ -86,7 +86,7 @@ a:hover{
 
 .card{
   border-style: solid;
-  border-color: black;
+  border-color: var(--text);
   border-width: thin;
   border-radius: 10px;
   margin-top: 3vh;
@@ -121,7 +121,6 @@ a:hover{
 .project-icon{
   font-size: 3.0em;
   font-weight: 300;
-  margin-bottom: ;
   float: right;
   color: var(--text);
 }
@@ -150,5 +149,7 @@ a.project-icon:hover{
   background-color: var(--text);
   padding: 0.5em;
   border-radius: 50%;
+  cursor: pointer;
   transition: all 200ms cubic-bezier(0, .8, .13, 1);
+  z-index: 1000;
 }

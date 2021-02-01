@@ -22,7 +22,7 @@
 <i id="toggler" onclick="toggleTheme()" class="fa fa-moon-o" style="float: right;" ></i>
 <script>updateTheme(theme)</script>
 <h1>Projects</h1>
-<p style="max-width: 80em;">Note: If the github icon is black, you must request to see my code, as it is protected under some sort of agreement!</p>
+<p style="max-width: 80em;">Note: If the github icon isn't green, you must request to see my code, as it is protected under some sort of agreement!</p>
 <div class="accordion" id="accordionExample">
   <div class="card">
     <div class="card-header" id="headingOne">
@@ -30,7 +30,7 @@
         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           <a>Sound Reactive LEDs using FFTs</a>
         </button>
-        <a href="#"class="fa fa-github project-icon" style="color:var(--accent);"></a>
+        <a href="https://github.com/joesimop/Sound-Reactive-LEDS"class="fa fa-github project-icon" style="color:var(--accent);"></a>
       </h5>
     </div>
 
@@ -48,12 +48,15 @@
         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           <a>LZW Compression in C</a>
         </button>
-        <a href="#" class="fa fa-github project-icon"></a>
+        <a href="https://github.com/joesimop/LZW-Compression-in-C" class="fa fa-github project-icon"></a>
       </h5>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
-        This is one of the projects I am most proud of completing. This is a compression algorithm that
+        Using bit-packing, a trie data structure, and clever table creation invented by Lempel, Ziv, and Welch, (hence LZW!). The goal of this project was to
+        create the most optimized algorithm we could. In order to do that, the bit packing allowed for close to maximum data compression and the trie data structure
+        allowed for max speed of table manipulation. Due to the nature of LZW, there would be a lot of lookups and insertion happening in the table so minimizing that time was key,
+        which was achieved through the trie struct. On top of this, we were allocating memory to the heap that we needed to keep track of. Awesome project.
       </div>
     </div>
   </div>
